@@ -4,12 +4,6 @@
 require __DIR__ . '/../inc/functions.php';
 
 
-// 1. Créer un formulaire HTML demandant les informations nécessaires au calcul
-// 2. Après soumission du formulaire, créer les variables qui vont contenir les informations du client
-// 3. Écrire le script qui permet de déterminer à quel palier peut prétendre un client, selon ses informations (et donc à quelle couleur de tarif)
-// 4. Afficher le résultat, par ex. "Votre client a droit au tarif Vert"
-// Bonus 1. Afficher le résultat de trois manières différentes : via `if` & `elseif` ou bien `switch` ou bien `array()`
-// Bonus 2. fioritures graphiques
 
 
 //I check if the form was sent
@@ -75,7 +69,7 @@ if (!empty($_POST)) {
             <!--if this tow variables exist I display their values-->
             <?php if (isset($tarif) && isset($numeroPalier)) : ?>
                 <p>
-                    Votre client à droit au tarif suivant <strong class="palier<?=  $numeroPalier ?>"><?= $tarif . ' euros' ?></strong>
+                    Votre étudiant à droit au tarif suivant <strong class="palier<?=  $numeroPalier ?>"><?= $tarif . ' euros' ?></strong>
                 </p>
             <?php endif; ?>
 

@@ -77,7 +77,7 @@
                 $tarif = '-';
             }
 
-            echo $tarif;
+            echo $tarif . ' euros TTC ' ;
 
             ?>
 
